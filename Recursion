@@ -1,0 +1,37 @@
+'''
+
+          Recursive Problems
+
+'''
+
+# Greatest common denominator: If x can be evenly divided by Y, then the greatet common
+# denominator of x and y is Y. Ohterwise the GCD of x and y is equal to (GCD of Y and the GCD of the Remainder of X/Y)
+def greatest_common(x,y):
+    
+    
+        # Base case 
+        
+        # Even case
+        
+        if x % y == 0:
+               return y 
+        
+        if y % x == 0:
+          return x 
+
+        else:
+            
+            return greatest_common(y, x % y)    
+        
+         
+        pass
+
+
+
+
+
+if __name__ == "__main__":
+    
+    result = greatest_common(8,3)
+    print(result)
+    pass
